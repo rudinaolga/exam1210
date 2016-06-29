@@ -9,7 +9,7 @@ def RegEx ():
     m = ReadTheText('examrudina.txt')
     mr = m.read()
     m.close()
-    res = re.findall('[А-Я, Ё]\. [А-Я, Ё][а-я,ё]+\w', mr)
+    res = re.findall('[А-ЯЁ]\. [А-ЯЁ][а-яё]+\w', mr)
     if res != None:
         for el in res:
             print(el)
